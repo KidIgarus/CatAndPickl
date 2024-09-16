@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat and Pickl's Minecraft Servers</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="./img/header_image.png" alt="Cat and Pickl's Minecraft Servers Header Image">
+        <h1>Welcome to Cat and Pickl's Minecraft Servers!</h1>
+    </header>
+    <main>
+        <section id="servers">
+            <h2>Our Servers</h2>
+            <div class="server-container">
+                <article class="server">
+                    <img src="./img/creative_thumbnail.png" alt="Creative Server Thumbnail">
+                    <h3>Creative Server</h3>
+                    <p><strong>Subdomain:</strong> creative.catandpickl.com</p>
+                    <p>Unleash your creativity on our Creative Server! Build anything you can imagine with unlimited resources and fly mode enabled.</p>
+                </article>
+                <article class="server">
+                    <img src="./img/survival_thumbnail.png" alt="Survival Server Thumbnail">
+                    <h3>Survival Server</h3>
+                    <p><strong>Subdomain:</strong> survival.catandpickl.com</p>
+                    <p>Ready for a challenge? Join our Survival Server, where you'll gather resources, build shelters, and fend off mobs.</p>
+                </article>
+                <article class="server">
+                    <img src="./img/modded_thumbnail.png" alt="Modded Server Thumbnail">
+                    <h3>Modded Server (Coming Soon)</h3>
+                    <p><strong>Subdomain:</strong> mods.catandpickl.com</p>
+                    <p>Dive into a unique Minecraft experience with custom mods that add new gameplay elements, items, and adventures. Stay tuned for more details!</p>
+                </article>
+            </div>
+        </section>
+        <section id="rules">
+            <h2>Server Rules</h2>
+            <ul>
+                <li>Be Respectful: Treat all players with kindness and respect. No bullying, harassment, or offensive language.</li>
+                <li>No Griefing: Do not destroy or alter other players' builds without permission.</li>
+                <li>No Cheating: Play fair. No hacks, cheats, or exploits allowed.</li>
+                <li>Keep It Family-Friendly: Our servers are for players of all ages. Keep chat and content appropriate.</li>
+                <li>Follow Instructions: Listen to and follow any instructions from server moderators and admins.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Join Our Community</h2>
+            <form action="/submit_form" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Your Minecraft Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="server">Preferred Server:</label>
+                    <select id="server" name="server">
+                        <option value="creative">Creative</option>
+                        <option value="survival">Survival</option>
+                        <option value="modded">Modded</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">A short message (Why do you want to join our servers?):</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="notifications" name="notifications">
+                    <label for="notifications">Notify me of server events</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cat and Pickl's Minecraft Servers. All rights reserved.</p>
+    </footer>
+</body>
+</html>
