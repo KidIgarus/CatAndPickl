@@ -2,6 +2,7 @@
 # a Gemfile as specified at https://github.com/github/pages-gem#conventional
 
 .vs
+.ignore
 
 # Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
 _site/
